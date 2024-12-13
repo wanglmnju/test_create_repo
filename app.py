@@ -58,6 +58,8 @@ def process_message(message):
         return "I can help you learn about Python concepts! Try asking about: loops, lists, dictionaries, functions, or classes."
     elif "example" in message:
         return provide_random_example()
+    elif "end" in message:
+        return "Good Bye!"
     else:
         return f"You said: {message}. Try asking about Python concepts or type 'help' for guidance!"
 
